@@ -89,18 +89,20 @@ h3{font-family:"Bitter",serif;font-weight:800;font-size:21px;line-height:1.2}
 
 /* ---------- Floating decor ---------- */
 .decor{position:absolute;inset:0;pointer-events:none;z-index:1}
-.dc{position:absolute;will-change:transform;filter:drop-shadow(0 14px 12px rgba(120,10,40,.25))}
+.dc{position:absolute;will-change:transform;filter:drop-shadow(0 16px 14px rgba(120,10,40,.28))}
 .dc.blur{filter:blur(5px);opacity:.55}
-.s1{width:64px;left:40%;top:110px;--r:-24deg}
-.f1{width:46px;left:36%;top:60px;--r:10deg}
-.s2{width:90px;left:4%;top:820px;--r:30deg}
+.s1{width:84px;left:39%;top:105px;--r:-24deg}
+.f1{width:58px;left:34.5%;top:52px;--r:10deg}
+.s2{width:150px;left:4%;top:820px;--r:30deg}
 .f2{width:70px;right:5%;top:930px;--r:0deg}
-.s3{width:58px;right:2.5%;top:150px;--r:18deg}
-.f3{width:40px;left:46%;top:640px;--r:-12deg}
-.s4{width:110px;right:30%;top:1650px;--r:-40deg}
-.s5{width:56px;left:47%;top:560px;--r:40deg}
+.s3{width:120px;right:1.5%;top:130px;--r:12deg}
+.f3{width:70px;left:44%;top:650px;--r:-20deg}
+.s4{width:150px;right:30%;top:1650px;--r:-40deg}
+.s5{width:74px;left:46.5%;top:540px;--r:30deg}
+.s7{width:80px;left:-14px;top:1300px;--r:-30deg}
+.f5{width:56px;right:3%;top:2150px;--r:20deg}
 .f4{width:90px;left:10%;top:2400px;--r:12deg}
-.s6{width:70px;right:6%;top:2900px;--r:-14deg}
+.s6{width:96px;right:6%;top:2900px;--r:-14deg}
 .dc{rotate:var(--r);animation:floaty 7s ease-in-out infinite}
 .dc:nth-child(2n){animation-duration:9s;animation-delay:-2s}
 .dc:nth-child(3n){animation-duration:11s;animation-delay:-4s}
@@ -171,7 +173,7 @@ h3{font-family:"Bitter",serif;font-weight:800;font-size:21px;line-height:1.2}
 .marquee{position:relative;z-index:2;background:var(--pink);color:#fff;overflow:hidden;padding:18px 0;transform:rotate(-1.4deg);margin:30px -10px 40px}
 .marquee-track{display:flex;align-items:center;gap:28px;width:max-content;animation:marquee 34s linear infinite}
 .marquee-track span{font-family:"Neucha",cursive;font-size:clamp(26px,2.6vw,36px);white-space:nowrap}
-.marquee-track img{width:30px;height:34px;flex:none}
+.marquee-track img{width:40px;height:40px;object-fit:contain;flex:none;filter:drop-shadow(0 4px 6px rgba(0,0,0,.25))}
 @keyframes marquee{to{transform:translateX(-50%)}}
 
 /* ---------- Sections ---------- */
@@ -204,7 +206,7 @@ section{position:relative;z-index:2}
 .about-text h2{max-width:17ch;margin-bottom:38px}
 .facts{list-style:none;display:grid;gap:26px}
 .facts li{display:flex;gap:18px;align-items:flex-start}
-.facts li > img{width:42px;flex:none;margin-top:2px}
+.facts li > img{width:48px;height:48px;object-fit:contain;flex:none;margin-top:2px}
 .facts p{color:#4a3a3e;max-width:50ch;margin-top:4px}
 
 /* Order */
@@ -234,7 +236,7 @@ legend{font:900 clamp(26px,2.6vw,36px)/1.15 "Bitter",serif;margin-bottom:24px}
 .cake-opt b{display:block;padding:10px 12px 12px;font:800 16px/1.2 "Bitter",serif}
 .cake-opt span::after{content:"";position:absolute;top:10px;right:10px;width:28px;height:28px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%23E8195A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat;transform:scale(0);transition:transform .35s var(--ease);box-shadow:0 4px 10px rgba(0,0,0,.15)}
 .cake-any i{display:grid;place-items:center;aspect-ratio:4/3;background:#fff}
-.cake-any i img{width:46%;aspect-ratio:auto}
+.cake-any i img{width:52%;aspect-ratio:auto;transform:none!important}
 .opt:hover span,.cake-opt:hover span{transform:translateY(-4px)}
 .cake-opt:hover img{transform:scale(1.06)}
 .opt input:checked + span,.cake-opt input:checked + span{border-color:var(--pink);box-shadow:0 18px 30px -18px rgba(232,25,90,.8)}
@@ -281,7 +283,7 @@ legend{font:900 clamp(26px,2.6vw,36px)/1.15 "Bitter",serif;margin-bottom:24px}
 .stack-a{left:2%;top:10%;transform:rotate(-9deg)}
 .stack-b{left:44%;top:0;transform:rotate(7deg)}
 .stack-c{left:22%;top:32%;transform:rotate(-2deg)}
-.candy-stack .stack-berry{width:90px;aspect-ratio:auto;border:0;box-shadow:none;border-radius:0;right:4%;left:auto;bottom:4%;top:auto;filter:drop-shadow(0 14px 12px rgba(0,0,0,.3));animation:floaty 6s ease-in-out infinite}
+.candy-stack .stack-berry{width:150px;aspect-ratio:auto;border:0;box-shadow:none;border-radius:0;right:4%;left:auto;bottom:4%;top:auto;filter:drop-shadow(0 14px 12px rgba(0,0,0,.3));animation:floaty 6s ease-in-out infinite}
 .candy-stack.in .stack-a{transform:rotate(-14deg) translate(-14px,8px)}
 .candy-stack.in .stack-b{transform:rotate(12deg) translate(16px,-8px)}
 
@@ -371,7 +373,7 @@ details[open] p{animation:fadeDown .45s var(--ease)}
   .sparks{display:none}
   .header-icons{gap:14px}
   .summary img{width:80px;height:100px}
-  .s3,.s1,.f1,.s5,.f3{display:none}
+  .s3,.s1,.f1,.s5,.f3,.s7{display:none}
   .arch-ghost{display:none}
 }
 @media (prefers-reduced-motion:reduce){
