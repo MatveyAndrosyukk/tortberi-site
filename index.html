@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тортбери — свежие торты и десерты в Бресте</title>
+<meta name="description" content="Тортбери — собственное производство тортов и десертов в Бресте. Без заморозки и стабилизаторов. 5 островков в Бресте, бронь торта на ваше имя, Candy Bar на праздник.">
+<meta property="og:title" content="Тортбери — свежие торты каждый день">
+<meta property="og:description" content="Собственное производство в Бресте. Без заморозки и стабилизаторов.">
+<meta property="og:image" content="img/hero-75.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='38' r='20' fill='%23C1123B'/%3E%3Cpath d='M32 18 C34 10 40 6 46 5' stroke='%233A2219' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/rubik-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="cherryGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff6b86"/>
+      <stop offset="45%" stop-color="#C1123B"/>
+      <stop offset="100%" stop-color="#5e0619"/>
+    </radialGradient>
+    <symbol id="cherry" viewBox="0 0 100 120">
+      <path d="M52 48 C54 28 64 12 82 4" stroke="#3A2219" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M70 10 C78 2 92 4 96 12 C86 18 76 16 70 10Z" fill="#5d7a3a"/>
+      <circle cx="50" cy="78" r="36" fill="url(#cherryGrad)"/>
+      <ellipse cx="38" cy="64" rx="9" ry="6" fill="#fff" opacity=".55" transform="rotate(-30 38 64)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Тортбери, на главную">
+    <svg class="brand-mark" viewBox="0 0 100 120" aria-hidden="true"><use href="#cherry"/></svg>
+    <span>Тортбери</span>
+  </a>
+  <nav class="nav-links" aria-label="Разделы">
+    <a href="#menu">Десерты</a>
+    <a href="#order">Как заказать</a>
+    <a href="#candy">Candy Bar</a>
+    <a href="#where">Где купить</a>
+  </nav>
+  <a class="btn btn-small" href="#order">Забронировать торт</a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-side" aria-hidden="true">
+    <span>Брест · собственное производство</span>
+  </div>
+
+  <div class="hero-text">
+    <p class="script reveal-hero" style="--d:.1s">С любовью к вкусу</p>
+    <h1 class="hero-title">
+      <span class="line reveal-hero" style="--d:.25s">Свежие торты</span>
+      <span class="line line-accent reveal-hero" style="--d:.4s">каждое утро<svg class="swoosh" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M4 22 C 80 6, 180 4, 296 16"/></svg></span>
+    </h1>
+    <p class="hero-lead reveal-hero" style="--d:.6s">Печём в своей пекарне в Бресте и каждое утро привозим на островки в торговых центрах. Без заморозки, без стабилизаторов — только сливки, масло, ягоды и настоящий шоколад.</p>
+    <div class="hero-cta reveal-hero" style="--d:.75s">
+      <a class="btn" href="#order">Забронировать торт</a>
+      <a class="btn btn-ghost" href="#where">Где купить</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="arch-ring" aria-hidden="true"></div>
+    <div class="arch reveal-arch">
+      <div class="slides">
+        <img src="img/hero-75.webp" alt="Торт «Красный бархат» с ягодами и цифрами 75" class="slide is-active">
+        <img src="img/hero-berries.webp" alt="«Красный бархат» с клубникой, малиной и голубикой, вид сверху" class="slide">
+        <img src="img/hero-wreath.webp" alt="Торт-венок со сливочным кремом и гранатом" class="slide">
+      </div>
+      <div class="arch-caption"><span id="slideName">Красный бархат</span></div>
+    </div>
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs><path id="circlePath" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+        <text><textPath href="#circlePath">без заморозки • без стабилизаторов • </textPath></text>
+      </svg>
+      <svg class="badge-cherry" viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    </div>
+    <div class="slide-dots" role="tablist" aria-label="Фото тортов">
+      <button class="dot is-active" aria-label="Фото 1"></button>
+      <button class="dot" aria-label="Фото 2"></button>
+      <button class="dot" aria-label="Фото 3"></button>
+    </div>
+    <svg class="float-cherry c1" data-depth="18" viewBox="0 0 100 120" aria-hidden="true"><use href="#cherry"/></svg>
+    <svg class="float-cherry c2" data-depth="-26" viewBox="0 0 100 120" aria-hidden="true"><use href="#cherry"/></svg>
+    <svg class="float-cherry c3" data-depth="12" viewBox="0 0 100 120" aria-hidden="true"><use href="#cherry"/></svg>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Без заморозки</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Без стабилизаторов</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Сливки 40%</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Вишнёвый конфи своего производства</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Каждое утро — свежее</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Без заморозки</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Без стабилизаторов</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Сливки 40%</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Вишнёвый конфи своего производства</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+    <span>Каждое утро — свежее</span><svg viewBox="0 0 100 120"><use href="#cherry"/></svg>
+  </div>
+</div>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="section-head reveal">
+    <h2>Что сегодня на витрине</h2>
+    <p>Ассортимент на островках обновляется каждый день. Понравился торт — забронируйте его на своё имя, и мы отложим.</p>
+  </div>
+
+  <div class="filters reveal" role="tablist" aria-label="Категории">
+    <button class="chip is-active" data-filter="all">Всё</button>
+    <button class="chip" data-filter="cake">Торты</button>
+    <button class="chip" data-filter="pastry">Пирожные</button>
+  </div>
+
+  <div class="grid">
+    <article class="card reveal" data-cat="cake">
+      <div class="card-img"><img src="img/red-velvet.webp" alt="Кусочек торта «Красный бархат»" loading="lazy"></div>
+      <h3>Красный бархат</h3>
+      <p>Бархатный бисквит, крем-чиз на сливках и вишнёвый конфи, который варим сами.</p>
+    </article>
+    <article class="card reveal" data-cat="cake">
+      <div class="card-img"><img src="img/kievsky.webp" alt="Киевский торт с ореховой посыпкой" loading="lazy"></div>
+      <h3>Киевский</h3>
+      <p>Воздушные белково-ореховые коржи и нежный крем «Шарлотт». Классика, которая не подводит.</p>
+    </article>
+    <article class="card reveal" data-cat="cake">
+      <div class="card-img"><img src="img/medovik.webp" alt="Медовик с клубникой, инжиром и голубикой" loading="lazy"></div>
+      <h3>Медовик</h3>
+      <p>Тонкие медовые коржи, сметанный крем и ягоды сверху.</p>
+    </article>
+    <article class="card reveal" data-cat="cake">
+      <div class="card-img"><img src="img/chocolate.webp" alt="Кусочек шоколадного торта в разрезе" loading="lazy"></div>
+      <h3>Шоколадный</h3>
+      <p>Влажный шоколадный бисквит и густой шоколадный крем. Для тех, кому мало шоколада.</p>
+    </article>
+    <article class="card reveal" data-cat="pastry">
+      <div class="card-img"><img src="img/heart-choux.webp" alt="Заварные пирожные в форме сердца" loading="lazy"></div>
+      <h3>Сердце Шу <em class="tag">новинка</em></h3>
+      <p>Заварное пирожное-сердце: в каждой половинке заварной крем и вишнёвый конфитюр.</p>
+    </article>
+    <article class="card reveal" data-cat="pastry">
+      <div class="card-img"><img src="img/eclairs.webp" alt="Эклеры с белым кремом и клубникой" loading="lazy"></div>
+      <h3>Эклеры</h3>
+      <p>Заварное тесто и много сливочного крема внутри.</p>
+    </article>
+    <article class="card reveal" data-cat="pastry">
+      <div class="card-img"><img src="img/craquelin.webp" alt="Профитроли с хрустящим кракелюром" loading="lazy"></div>
+      <h3>Профитроли с кракелюром</h3>
+      <p>Хрустящая сахарная корочка сверху, мягкий крем внутри.</p>
+    </article>
+    <article class="card reveal" data-cat="pastry">
+      <div class="card-img"><img src="img/mini-velvet.webp" alt="Мини-тортики «Красный бархат» в индивидуальной упаковке" loading="lazy"></div>
+      <h3>Мини-бархат</h3>
+      <p>Тот же «Красный бархат», но на одного. Удобно взять с собой к кофе.</p>
+    </article>
+  </div>
+
+  <p class="menu-note reveal">А ещё «Молочная девочка», «Наполеон», «Крещатый яр», капкейки, трубочки со сгущёнкой и сезонные новинки — следите за <a href="https://www.instagram.com/tortberi.brest/" target="_blank" rel="noopener">нашим Instagram</a>.</p>
+</section>
+
+<!-- ABOUT / SPLIT -->
+<section class="about">
+  <div class="about-photo reveal">
+    <img src="img/choco-berry.webp" alt="Шоколадный торт с клубникой в разрезе" loading="lazy">
+  </div>
+  <div class="about-text">
+    <h2 class="reveal">Настоящий вкус — это когда пахнет ванилью, а&nbsp;не&nbsp;химией</h2>
+    <ul class="facts">
+      <li class="reveal">
+        <h3>Своя пекарня</h3>
+        <p>Полный цикл в собственном цеху: от замеса теста до финального декора. Каждый этап под нашим контролем.</p>
+      </li>
+      <li class="reveal">
+        <h3>Натуральные продукты</h3>
+        <p>Сливочное масло, сливки, настоящий шоколад, свежие ягоды и фрукты. Без искусственных добавок и консервантов.</p>
+      </li>
+      <li class="reveal">
+        <h3>Всё по техкартам</h3>
+        <p>Продукция сертифицирована и готовится по строгим технологическим картам — торт сегодня такой же, как в прошлый раз.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ORDER QUIZ -->
+<section class="order" id="order">
+  <div class="order-intro reveal">
+    <h2>Забронировать торт</h2>
+    <p>Ответьте на пару вопросов — мы соберём сообщение для Direct, вам останется только отправить.</p>
+    <figure class="order-photo">
+      <img src="img/inscription.webp" alt="Торт с лаконичной надписью «Люблю» и сердечками" loading="lazy">
+      <figcaption class="script">Простая надпись — пожалуйста</figcaption>
+    </figure>
+  </div>
+
+  <form class="quiz reveal" id="quiz" novalidate>
+    <div class="quiz-progress" aria-hidden="true"><span id="quizBar"></span></div>
+    <p class="quiz-step-label" id="quizStepLabel">Шаг 1 из 4</p>
+
+    <fieldset class="step is-active" data-step="1">
+      <legend>Что вам нужно?</legend>
+      <div class="options">
+        <label class="opt"><input type="radio" name="type" value="Бронь торта с витрины" required><span><b>Торт с витрины</b><small>Отложим готовый торт на ваше имя</small></span></label>
+        <label class="opt"><input type="radio" name="type" value="Торт с надписью"><span><b>Торт с надписью</b><small>Простое оформление и ваша надпись</small></span></label>
+        <label class="opt"><input type="radio" name="type" value="Candy Bar"><span><b>Candy Bar</b><small>Десерты на праздник, минимум за 2 дня</small></span></label>
+        <label class="opt"><input type="radio" name="type" value="Сотрудничество для бизнеса"><span><b>Для бизнеса</b><small>Кофейни, рестораны, отели</small></span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="step" data-step="2">
+      <legend>Какой торт и сколько?</legend>
+      <div class="field">
+        <label for="cake">Торт</label>
+        <select id="cake" name="cake">
+          <option>Красный бархат</option>
+          <option>Молочная девочка</option>
+          <option>Киевский</option>
+          <option>Медовик</option>
+          <option>Наполеон</option>
+          <option>Шоколадный</option>
+          <option>Крещатый яр</option>
+          <option>Подскажите, что есть сегодня</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="field-label">Примерный вес</span>
+        <div class="pills">
+          <label><input type="radio" name="weight" value="около 1 кг" checked><span>1 кг</span></label>
+          <label><input type="radio" name="weight" value="около 1,5 кг"><span>1,5 кг</span></label>
+          <label><input type="radio" name="weight" value="около 2 кг"><span>2 кг</span></label>
+          <label><input type="radio" name="weight" value="3 кг и больше"><span>3+ кг</span></label>
+        </div>
+      </div>
+      <div class="field" id="inscriptionField" hidden>
+        <label for="inscription">Надпись на торте</label>
+        <input id="inscription" name="inscription" type="text" maxlength="40" placeholder="Например: С днём рождения, мама!">
+      </div>
+      <div class="field" id="guestsField" hidden>
+        <label for="guests">Сколько гостей и какой праздник?</label>
+        <input id="guests" name="guests" type="text" placeholder="Например: свадьба, 60 гостей">
+      </div>
+    </fieldset>
+
+    <fieldset class="step" data-step="3">
+      <legend>Когда и где забрать?</legend>
+      <div class="field">
+        <label for="date">Дата</label>
+        <input id="date" name="date" type="date" required>
+        <p class="hint" id="dateHint"></p>
+      </div>
+      <div class="field">
+        <label for="place">Островок</label>
+        <select id="place" name="place">
+          <option>ТЦ «Варшавский», Махновича, 6</option>
+          <option>ТЦ «Экватор», Гаврилова, 16</option>
+          <option>ТЦ «Мартин», Костюшко, 1</option>
+          <option>ЦУМ, Машерова, 17 (цокольный этаж)</option>
+          <option>Евроопт, Варшавское шоссе, 11</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset class="step" data-step="4">
+      <legend>Как к вам обращаться?</legend>
+      <div class="field">
+        <label for="name">Имя для брони</label>
+        <input id="name" name="name" type="text" autocomplete="given-name" required placeholder="Анна">
+      </div>
+      <div class="field">
+        <label for="phone">Телефон <small>(необязательно)</small></label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+375 29 ...">
+      </div>
+      <div class="preview">
+        <span class="field-label">Сообщение для Direct</span>
+        <pre id="preview"></pre>
+      </div>
+    </fieldset>
+
+    <p class="quiz-error" id="quizError" role="alert"></p>
+
+    <div class="quiz-nav">
+      <button type="button" class="btn btn-ghost" id="prevBtn" hidden>Назад</button>
+      <button type="button" class="btn" id="nextBtn">Дальше</button>
+      <button type="submit" class="btn" id="sendBtn" hidden>Скопировать и открыть Direct</button>
+    </div>
+  </form>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</section>
+
+<!-- CANDY BAR -->
+<section class="candy" id="candy">
+  <div class="candy-inner">
+    <div class="candy-text reveal">
+      <p class="script">Для праздника и для бизнеса</p>
+      <h2>Candy Bar</h2>
+      <p>Соберём сладкий стол из эклеров, профитролей, капкейков и мини-тортов — под ваш бюджет и количество гостей.</p>
+      <ul class="candy-list">
+        <li><b>Праздники</b> — свадьбы, юбилеи, детские дни рождения</li>
+        <li><b>Бизнес</b> — поставки для отелей, ресторанов и кофеен</li>
+        <li><b>Сроки</b> — заказ минимум за 2 дня до события</li>
+      </ul>
+      <a class="btn btn-light" href="#order" data-preset="Candy Bar">Рассчитать Candy Bar</a>
+    </div>
+    <div class="candy-stack" aria-hidden="true">
+      <img src="img/cupcakes.webp" alt="" class="stack-a">
+      <img src="img/profiteroles.webp" alt="" class="stack-b">
+      <img src="img/eclairs.webp" alt="" class="stack-c" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- WHERE -->
+<section class="where" id="where">
+  <div class="section-head reveal">
+    <h2>Островки в Бресте</h2>
+    <p>Работаем каждый день с 10:00 до 21:00, в «Мартине» — до 20:30.</p>
+  </div>
+  <ul class="spots">
+    <li class="spot reveal">
+      <h3>ТЦ «Варшавский»</h3>
+      <p>ул. Махновича, 6</p>
+      <span>10:00–21:00</span>
+      <a href="https://yandex.by/maps/?text=%D0%91%D1%80%D0%B5%D1%81%D1%82%2C%20%D0%9C%D0%B0%D1%85%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%B0%2C%206" target="_blank" rel="noopener">Открыть на карте</a>
+    </li>
+    <li class="spot reveal">
+      <h3>ТЦ «Экватор»</h3>
+      <p>ул. Гаврилова, 16</p>
+      <span>10:00–21:00</span>
+      <a href="https://yandex.by/maps/?text=%D0%91%D1%80%D0%B5%D1%81%D1%82%2C%20%D0%93%D0%B0%D0%B2%D1%80%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%2C%2016" target="_blank" rel="noopener">Открыть на карте</a>
+    </li>
+    <li class="spot reveal">
+      <h3>ТЦ «Мартин»</h3>
+      <p>ул. Костюшко, 1</p>
+      <span>10:00–20:30</span>
+      <a href="https://yandex.by/maps/?text=%D0%91%D1%80%D0%B5%D1%81%D1%82%2C%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D1%88%D0%BA%D0%BE%2C%201" target="_blank" rel="noopener">Открыть на карте</a>
+    </li>
+    <li class="spot reveal">
+      <h3>ЦУМ</h3>
+      <p>ул. Машерова, 17, цокольный этаж</p>
+      <span>10:00–21:00</span>
+      <a href="https://yandex.by/maps/?text=%D0%91%D1%80%D0%B5%D1%81%D1%82%2C%20%D0%9C%D0%B0%D1%88%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%2C%2017" target="_blank" rel="noopener">Открыть на карте</a>
+    </li>
+    <li class="spot reveal">
+      <h3>Евроопт</h3>
+      <p>Варшавское шоссе, 11</p>
+      <span>10:00–21:00</span>
+      <a href="https://yandex.by/maps/?text=%D0%91%D1%80%D0%B5%D1%81%D1%82%2C%20%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2011" target="_blank" rel="noopener">Открыть на карте</a>
+    </li>
+  </ul>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <h2 class="reveal">Частые вопросы</h2>
+  <div class="faq-list">
+    <details class="reveal">
+      <summary>Как забронировать торт?</summary>
+      <p>Заполните форму выше или напишите нам в Direct: какой торт, примерный вес, дату и островок. Мы отложим торт на ваше имя.</p>
+    </details>
+    <details class="reveal">
+      <summary>Делаете торты со сложным декором?</summary>
+      <p>Нет — у нас массовое производство для сети островков, поэтому фигурки, многоярусные конструкции и филигранную огранку мы не берём. Зато с радостью сделаем простое аккуратное оформление и лаконичную надпись.</p>
+    </details>
+    <details class="reveal">
+      <summary>За сколько дней нужно заказывать Candy Bar?</summary>
+      <p>Минимум за 2 дня до события. Чем раньше напишете — тем больше выбор десертов.</p>
+    </details>
+    <details class="reveal">
+      <summary>Где посмотреть состав и КБЖУ?</summary>
+      <p>Состав и пищевая ценность указаны на упаковке каждого десерта, а для многих тортов — в наших постах в Instagram.</p>
+    </details>
+    <details class="reveal">
+      <summary>Почему без заморозки?</summary>
+      <p>Потому что десерты печём каждый день и сразу везём на островки. Заморозка и стабилизаторы нужны тем, кто хранит долго, — мы так не делаем.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-big" aria-hidden="true">Тортбери</div>
+  <div class="footer-row">
+    <p>ООО «Тортбери», Брест</p>
+    <a href="https://www.instagram.com/tortberi.brest/" target="_blank" rel="noopener">Instagram @tortberi.brest</a>
+    <a href="https://ig.me/m/tortberi.brest" target="_blank" rel="noopener">Написать в Direct</a>
+  </div>
+</footer>
+
+<a class="fab" href="#order" aria-label="Забронировать торт">
+  <svg viewBox="0 0 100 120" aria-hidden="true"><use href="#cherry"/></svg>
+  <span>Забронировать</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
