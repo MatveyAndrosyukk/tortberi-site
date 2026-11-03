@@ -66,7 +66,9 @@ h3{font-family:"Bitter",serif;font-weight:800;font-size:21px;line-height:1.2}
   padding:22px var(--pad) 18px;
   transition:background .4s,padding .4s var(--ease),box-shadow .4s;
 }
-.header.scrolled{background:rgba(253,233,239,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:10px;padding-bottom:10px;box-shadow:0 1px 0 rgba(232,25,90,.12)}
+.header::before{content:"";position:absolute;left:0;right:0;bottom:calc(100% - 1px);height:160px;background:transparent;pointer-events:none;transition:background .4s}
+.header.scrolled::before{background:#FDE9EF}
+.header.scrolled{background:#FDE9EF;padding-top:10px;padding-bottom:10px;box-shadow:0 1px 0 rgba(232,25,90,.12)}
 .logo img{height:clamp(54px,5.4vw,78px);width:auto;transition:height .4s var(--ease),transform .5s var(--ease)}
 .header.scrolled .logo img{height:48px}
 .logo:hover img{transform:rotate(-4deg) scale(1.04)}
