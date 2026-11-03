@@ -91,8 +91,8 @@ h3{font-family:"Bitter",serif;font-weight:800;font-size:21px;line-height:1.2}
 .decor{position:absolute;inset:0;pointer-events:none;z-index:1}
 .dc{position:absolute;will-change:transform;filter:drop-shadow(0 16px 14px rgba(120,10,40,.28))}
 .dc.blur{filter:blur(5px);opacity:.55}
-.s1{width:84px;left:39%;top:105px;--r:-24deg}
-.f1{width:58px;left:34.5%;top:52px;--r:10deg}
+.s1{width:84px;left:31%;top:120px;--r:-24deg}
+.f1{width:58px;left:26%;top:56px;--r:10deg}
 .s2{width:150px;left:4%;top:820px;--r:30deg}
 .f2{width:70px;right:5%;top:930px;--r:0deg}
 .s3{width:120px;right:1.5%;top:130px;--r:12deg}
